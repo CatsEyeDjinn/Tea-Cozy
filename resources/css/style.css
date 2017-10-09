@@ -1,4 +1,4 @@
-body, title {
+title {
   background-color: black;
   font-family: Helvetica;
   font-size: 22px;
@@ -7,32 +7,38 @@ body, title {
   border-bottom: seashell;
 }
 
-#links {
+body {
+    background-color: black;
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+    text-align: center;
+}
+
+#header {
   display: flex;
-  justify-content: flex-end;
-  font-family: Helvetica;
-  text-decoration-color: seashell;
-  font-size: 22px;
-  color: seashell;
-  opacity: 0.9;
-  border-bottom: 1px solid seashell;
-}
-
-#logo {
-  display: block;
-  padding-left: 10px;
-  height: 50px
-  text-decoration: underline;
-  justify-content: center;
-}
-
-.header {
   height: 69px;
+  border-bottom: 1px solid seashell;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  width: 100%;
+  background-color: black;
+}
+
+nav {
+  display: inline-block;
+  text-decoration: underline;
+  color: seashell;
+  align-items: right;
+  text-align: center;
+  border: 1px solid white;
 }
 
 #mission {
-  display: inline-block;
+  background-image: url("./resources/img-mission-background.jpg");
+  height: 700px;
   width: 1200px;
-  text-align: center;
-  background-image: url("/resources/img-mission-background.jpg");
+  align-items: center;
 }
