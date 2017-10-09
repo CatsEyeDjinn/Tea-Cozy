@@ -22,9 +22,15 @@ body {
   border-bottom: 1px solid seashell;
   justify-content: space-between;
   align-items: center;
-  z-index: 3;
   width: 100%;
   background-color: black;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  height: 50px;
 }
 
 nav {
@@ -37,8 +43,19 @@ nav {
 }
 
 #mission {
-  background-image: url("./resources/img-mission-background.jpg");
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   height: 700px;
   width: 1200px;
   align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.text {
+  background-color: black;
+  width: 1200px;
+  color: seashell;
+  opacity: 0.9;
 }
