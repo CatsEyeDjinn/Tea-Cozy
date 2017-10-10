@@ -16,30 +16,31 @@ body {
     text-align: center;
 }
 
+a {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+}
+
+nav span {
+  padding: 0 8px
+}
+
+nav {
+  display: block;
+  color: seashell;
+  align-items: right;
+  text-align: right;
+}
+
 #header {
   display: flex;
-  height: 69px;
   border-bottom: 1px solid seashell;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   background-color: black;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  margin-left: 10px;
-  height: 50px;
-}
-
-nav {
-  display: inline-block;
-  text-decoration: underline;
-  color: seashell;
-  align-items: right;
-  text-align: center;
-  border: 1px solid white;
 }
 
 #mission {
@@ -51,6 +52,25 @@ nav {
   align-items: center;
   justify-content: center;
   display: flex;
+  margin: auto;
+}
+
+#totm {
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 1200px;
+    margin: auto;
+}
+
+#container {
+  display: flex;
+  height: auto;
+  width: auto;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .text {
@@ -58,4 +78,15 @@ nav {
   width: 1200px;
   color: seashell;
   opacity: 0.9;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+.images {
+  display: block;
+  position: relative;
 }
