@@ -84,12 +84,7 @@ nav {
     height: 500px;
     width: 1200px;
     margin: auto;
-}
-
-#footer {
-  display: inline-block;
-  height: 200px;
-  margin: 20px;
+    padding: 15px 40px;
 }
 
 .text {
@@ -130,11 +125,12 @@ nav {
   background-color: black;
   width: 300px;
   opacity: 1;
-  align-items: center;
-  padding: 15px;
+  margin: 15px;
 }
 
-.mail h5 {
+.mail {
+  display: flex;
+  flex: auto;
   text-align: left;
   margin-left: 20px;
 }
