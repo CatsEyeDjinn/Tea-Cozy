@@ -14,6 +14,7 @@ body {
     color: seashell;
     opacity: 0.9;
     text-align: center;
+    margin: 0px;
 }
 
 a {
@@ -41,10 +42,13 @@ nav {
   align-items: center;
   width: 100%;
   background-color: black;
+  position: fixed;
+  flex-grow: 1;
+  z-index: 1;
 }
 
 #mission {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-image: url("../img-mission-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 700px;
@@ -61,16 +65,31 @@ nav {
   align-items: center;
   justify-content: center;
   display: flex;
-  width: 1200px;
+  width: 1000px;
   margin: auto;
 }
 
 #container {
-  display: inline;
+  display: flex;
   justify-content: center;
-  width: 700px;
-  height: 1000px;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: auto;
+}
+
+#locations {
+    background-image: url("../img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 1200px;
+    margin: auto;
+}
+
+#footer {
+  display: inline-block;
+  height: 200px;
+  margin: 20px;
 }
 
 .text {
@@ -87,6 +106,35 @@ nav {
 }
 
 .images {
- display: inline-grid;
- flex: auto;
+ display: block;
+ padding: 5px 5px;
+ font-weight: bold;
+ text-align: center;
+}
+
+.images img {
+  height: 200px;
+  width: 300px;
+  padding: 10px 10px;
+}
+
+.images span {
+  align-items: center;
+  text-align: center;
+  display:block;
+  padding: 10px 10px 10px 10px;
+}
+
+.location {
+  display: inline-block;
+  background-color: black;
+  width: 300px;
+  opacity: 1;
+  align-items: center;
+  padding: 15px;
+}
+
+.mail h5 {
+  text-align: left;
+  margin-left: 20px;
 }
