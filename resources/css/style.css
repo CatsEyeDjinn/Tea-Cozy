@@ -62,15 +62,15 @@ nav {
   justify-content: center;
   display: flex;
   width: 1200px;
-    margin: auto;
+  margin: auto;
 }
 
 #container {
-  display: flex;
-  height: auto;
-  width: auto;
+  display: inline;
   justify-content: center;
-  flex-wrap: wrap;
+  width: 700px;
+  height: 1000px;
+  align-items: center;
 }
 
 .text {
@@ -87,6 +87,6 @@ nav {
 }
 
 .images {
-  display: block;
-  position: relative;
+ display: inline-grid;
+ flex: auto;
 }
